@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blogging Platform</title>
+    <title>Interactive App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>My Blog</h1>
+    <h1>Interactive Web App</h1>
 
-    <div class="blog-form">
-        <input type="text" id="title" placeholder="Blog Title">
-        <textarea id="content" rows="5" placeholder="Write your blog here..."></textarea>
-        <button onclick="addBlog()">Publish</button>
+    <div class="box">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="showMessage()">Click Me</button>
+        <p id="output"></p>
     </div>
-
-    <div id="blogs"></div>
 
     <script src="script.js"></script>
 </body>

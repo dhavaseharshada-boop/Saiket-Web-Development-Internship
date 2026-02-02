@@ -1,19 +1,10 @@
-function addBlog() {
-    var title = document.getElementById("title").value;
-    var content = document.getElementById("content").value;
+function showMessage() {
+    var name = document.getElementById("username").value;
 
-    if (title === "" || content === "") {
-        alert("Please fill all fields");
-        return;
+    if (name === "") {
+        alert("Please enter your name");
+    } else {
+        document.getElementById("output").innerText =
+            "Hello " + name + "! Welcome to my interactive app 😊";
     }
-
-    var blogDiv = document.createElement("div");
-    blogDiv.className = "blog-post";
-
-    blogDiv.innerHTML = "<h3>" + title + "</h3><p>" + content + "</p>";
-
-    document.getElementById("blogs").appendChild(blogDiv);
-
-    document.getElementById("title").value = "";
-    document.getElementById("content").value = "";
 }
