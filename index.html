@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Form</title>
+    <title>Blogging Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <form>
-        <h2>Contact Us</h2>
+    <h1>My Blog</h1>
 
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name"><br><br>
+    <div class="blog-form">
+        <input type="text" id="title" placeholder="Blog Title">
+        <textarea id="content" rows="5" placeholder="Write your blog here..."></textarea>
+        <button onclick="addBlog()">Publish</button>
+    </div>
 
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"><br><br>
+    <div id="blogs"></div>
 
-        <label>Gender:</label><br>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female<br><br>
-
-        <label>Skills:</label><br>
-        <input type="checkbox"> HTML
-        <input type="checkbox"> CSS
-        <input type="checkbox"> JavaScript<br><br>
-
-        <label>Message:</label><br>
-        <textarea rows="4" placeholder="Write your message"></textarea><br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
+    <script src="script.js"></script>
 </body>
 </html>
